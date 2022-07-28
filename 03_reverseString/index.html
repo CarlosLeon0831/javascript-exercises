@@ -8,11 +8,23 @@
   </head>
   <body>
     <script>
-      const reverseString = function(string) {
-        return string.split('').reverse().join('');
+      // Exercise 3
+      // const reverseString = function(string) {
+      //   return string.split('').reverse().join('');
+      // };
+      // reverseString('hello');
+      // console.log(reverseString('hello'));
+
+      // Exercise 4
+      array = [1, 2, 3, 4];
+      const removeFromArray = function (a, index) {
+        let newArray = [...a];
+        newArray.splice(index, 1);
+        return newArray;
       };
-      reverseString('hello');
-      console.log(reverseString('hello'));
+      removeFromArray(array, 2);
+      let newArray = removeFromArray(array, 2);
+      console.log(newArray);
     </script>
   </body>
 </html>
